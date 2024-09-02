@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 8000;
 app.use(express.json());
 
 app.get('/api/check', (req, res) => {
+    axios.get(process.env.URL);
     res.status(201).json({success: true, message: "Hello World!"});
 })
 
