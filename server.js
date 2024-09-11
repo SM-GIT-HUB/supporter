@@ -29,4 +29,6 @@ app.listen(PORT, () => {
 })
 
 
-axios.get(process.env.URL);
+setInterval(() => {
+    axios.get(process.env.URL);
+}, 600000)
