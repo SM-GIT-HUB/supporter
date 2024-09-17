@@ -30,7 +30,7 @@ app.listen(PORT, () => {
 })
 
 
-setInterval(() => {
-    axios.get(process.env.URL_1);
-    axios.get(process.env.URL_2);
-}, 600000)
+// setInterval(() => {
+//     axios.get(process.env.URL_1);
+//     axios.get(process.env.URL_2);
+// }, 600000)
