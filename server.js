@@ -16,7 +16,7 @@ app.use(cors());
 
 app.get('/api/check', (req, res) => {
     // axios.get(process.env.URL_1);
-    axios.get(process.env.URL_2);
+    // axios.get(process.env.URL_2);
     res.status(201).json({success: true, message: "Hello World!"});
 })
 
@@ -30,7 +30,7 @@ app.listen(PORT, () => {
 })
 
 
-setInterval(() => {
-    // axios.get(process.env.URL_1);
-    axios.get(process.env.URL_2);
-}, 600000)
+// setInterval(() => {
+//     axios.get(process.env.URL_1);
+//     axios.get(process.env.URL_2);
+// }, 600000)
