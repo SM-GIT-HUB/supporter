@@ -28,7 +28,6 @@ app.listen(PORT, () => {
     console.log(`server running on port: ${PORT}`);
 })
 
-
 setInterval(() => {
     axios.get(process.env.URL_1);
     axios.get(process.env.URL_3);
