@@ -24,13 +24,12 @@ app.use('/api/overview', overview);
 app.use('/api/category', category);
 app.use('/api/channel', channel);
 
-
 app.listen(PORT, () => {
     console.log(`server running on port: ${PORT}`);
 })
 
 
-// setInterval(() => {
-//     axios.get(process.env.URL_1);
-//     axios.get(process.env.URL_2);
-// }, 600000)
+setInterval(() => {
+    axios.get(process.env.URL_1);
+    axios.get(process.env.URL_3);
+}, 1000 * 60 * 10)

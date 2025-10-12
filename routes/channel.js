@@ -35,5 +35,4 @@ router.get('/week', (req, res) => {
     )
 })
 
-
 export default router
