@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/api/check', (req, res) => {
-    res.status(201).json({success: true, message: "Hello World!"});
+    res.status(201).json({ success: true, message: "Hello World!" });
 })
 
 app.use('/api/overview', overview);
@@ -25,13 +25,3 @@ app.use('/api/channel', channel);
 app.listen(PORT, () => {
     console.log(`server running on port: ${PORT}`);
 })
-
-setInterval(async() => {
-    try {
-        await axios.get(process.env.URL_1);
-        await axios.get(process.env.URL_3);
-    }
-    catch(err) {
-        await axios.get(process.env.URL_3);
-    }
-}, 1000 * 60 * 10)
